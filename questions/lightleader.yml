@@ -1,0 +1,11 @@
+type: TextQuestion
+id: quarter
+is_optional_page: True
+prompt: |
+
+  # Which Company designed and sold this incinerator?
+
+answers:
+
+  - Light Leader
+

@@ -3,3 +3,4 @@ content: |
     # Demo page
 
     I am just a simple demo page. Go back to the [course page](course:)?
+    <iframe width="1920" height="1080" src="https://www.youtube.com/embed/dT2owtxkU8k" frameborder="0" allowfullscreen></iframe>

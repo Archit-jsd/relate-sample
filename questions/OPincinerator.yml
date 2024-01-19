@@ -1,0 +1,19 @@
+type: MultipleChoiceQuestion
+id: OPincinerator
+value: 1
+shuffle: False
+credit_mode: proportional
+prompt: |
+
+    # Operating an Incinerator
+
+    which of the following are pre-Operation tasks for an incinerator?
+
+choices:
+
+  - ~CORRECT~ Pre-heat the incinerator.
+  - Clean the wiremesh.
+  - Load the content for incineration
+  - ~CORRECT~ Check the ease of pulling out the wire mesh.
+  - Ensure that the exhaust pipe has no obstruction.
+

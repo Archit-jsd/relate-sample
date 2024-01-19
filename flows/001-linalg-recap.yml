@@ -1,6 +1,6 @@
 title: "Linear Algebra"
 description: |
-    # Linear Algebra Recap
+    # Incinerator Operations
 
 rules:
     access:
@@ -17,92 +17,56 @@ pages:
     id: intro
     content: |
 
-        # A little distraction to start
-
-        Yadda yadda.
-
-        {% from "content-macros.jinja" import youtube %}
-        {{ youtube("QH2-TGUlwu4") }}
+        # Let us understand what an incinerator is
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/J2HTEJhns_c?si=7GlFrom9K_1OtvUZ" frameborder="0" allowfullscreen></iframe>
 
 -
     type: Page
-    id: vectors
+    id: Incinertaor
     content: |
 
-        # Vectors
+        # Parts of an Incinerator
+        Below is a list of the different parts of an incinerator and a functional description of them.
 
-        A vector is pretty straight.
+        #Frame
+        frame is the skeletion of the incinerator.
+        
+        #Legs
+        Legs are the points of contact between the incineratior and the surface on which the incinerator is placed.
 
+        #Control Panel
+        Control panel is the nerve center of the incinerator. The incinerator is controlled from here. Safety devices such as electric breaker and temperature indicator are placed in the 
+        control panel.
 
+        #Door
+        Door provides access to the burning area as well as the burning coils and the  wire mesh basket. The loading and unloading of the substance to be burnt is through the door.
+
+        #Wiremesh Basket
+        The wiremesh basket is the container for placing the waste matter to be incinerated.
+
+        #Ashtray
+        The Ashtray collect the ash from the burning process. The ashtray can be removed sideways and emptyied into containers for storing ash.
+
+        #Heating Coils
+        There are two heating coils mounted on the LHS and RHS walls of the incinerator. These coils radiate heat towards the wireman basket and the matter in it and cause it to burn.
+
+        #Exhaust pipe
+        Exhaust pipe takes the exhaust gases and smoke upto a height prescribed by the WHO so as to avoid pollution.
 -
     type: Page
-    id: ipynb
+    id: pre-operation
     content: |
 
-      # Ipython notebook render examples
-
-      The following examples were using [this ipynb file](repocur:ipynbs/Ipynb_example.ipynb) in `ipynbs` folder of this repo.
-
-      ## Fully rendered
-      
-      The following markdown was used to render the full notebook:
-      
-      ```
-      {{ '{{ render_notebook_cells("ipynbs/Ipynb_example.ipynb") }}' }}
-      ```
-
-      Result:
-
-      {{ render_notebook_cells("ipynbs/Ipynb_example.ipynb") }}
-
-      ## Sliced
-
-      We can choose which cells (by their 0-based indices) to be rendered with arg `indices`.
-
-      For example, cells 0 through 4 can be rendered with the following markdown:
-
-
-      ```
-      {{ '{{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", indices=[0,1,2,3,4]) }}' }}
-      ```
-
-      Or using `jinja2` built-in function [`range`](http://jinja.pocoo.org/docs/2.9/templates/#range):
-
-      ```
-      {{ '{{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", indices=range(0,4)) }}' }}
-      ```
-
-      Result:
-
-      {{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", indices=range(0,4)) }}
-
-      ## With markdown cleared
-
-      Use `clear_markdown` to get the result with content of *all* markdown cells cleared:
-
-      ```
-      {{ '{{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", clear_markdown=True) }}' }}
-      ```
-
-      Result:
-
-      {{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", clear_markdown=True) }}
-
-      ## With code execution output cleared
-
-      Use `clear_output` to get the result with output of *all* code cells cleared:
-
-      Result:
-
-      ```
-      {{ '{{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", clear_output=True) }}' }}
-      ```
-
-      {{ render_notebook_cells("ipynbs/Ipynb_example.ipynb", clear_output=True) }}
-
+      # Pre-Operation Procedures
+      The following tasks need to be carried out before operating the incinerator.
+        1.The  incinerator needs to be preheatd to 200 degree Centigrade before the waste to be incinerated is loaded.
+        2.you can preheat the incinerator by pressing the start button.
+        3.Read the temperature indicator to note the temperature in the chamber.
+        4.Once the chamber has reached the temperature of 200 degrees C switch off by pressing the Power off switch.
+       The incinerator will shut off immediately if you open the door without switching the Power off button. 
 
 completion_text: |
 
-    # End of Linear Algebra Recap
+    # End of Pre-Operation Procedure
 
     Now you're ready to take the [quiz](flow:quiz-test).

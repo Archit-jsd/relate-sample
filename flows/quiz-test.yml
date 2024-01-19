@@ -7,7 +7,7 @@
 # separate files. This is optional, but conceivably useful.
 {% from "yaml-macros.yml" import indented_include %}
 
-title: "RELATE Test Quiz"
+title: "Incinerator Quiz"
 
 # The "|" character introduces a 'block literal', which means all text indented below
 # it is taken literally. The description property holds text marked up with 'Markdown'.
@@ -16,7 +16,7 @@ title: "RELATE Test Quiz"
 # So the '#' character below introduces a first-level headline (not a comment).
 description: |
 
-    # RELATE Test Quiz
+    # Incinerator Quiz
 
 rules:
     start:
@@ -53,7 +53,7 @@ groups:
         id: welcome
         content: |
 
-            # Welcome to the test quiz for RELATE!
+            #Welcome to the test quiz for Incinerator!
 
             Don't be scared.
 
@@ -66,50 +66,47 @@ groups:
     # them from other files, as below.
     -
         type: TextQuestion
-        id: half
+        id: power
         value: 5
         prompt: |
 
-          # A half
+          # A Power
 
-          What's a half?
+          How much Power(in kwatts) does an incinerate need to start?
 
         answers:
 
           - type: float
-            value: 0.5
+            value: 2
             rtol: 1e-4
           - <plain>half
           - <plain>a half
 
     -
-        {{ indented_include("questions/krylov.yml", 8) }}
+        {{ indented_include("questions/partsofincinerator.yml", 8) }}
 
     -
         type: MultipleChoiceQuestion
-        id: ice_cream_toppings
+        id: incinerator loads
         credit_mode: exact
         value: 1
-        shuffle: False
+        shuffle: True
         prompt: |
 
-            # Ice Cream Toppings
+            #Incinerator loads
 
-            Which of the following are ice cream toppings?
+            Which of the following are loads for an incinerator?
 
         choices:
 
-          - ~CORRECT~ Sprinkles
-          - ~CORRECT~ Chocolate chunks
-          - Vacuum cleaner dust
-          - Spider webs
-          - ~CORRECT~ Almond bits
+          - ~CORRECT~ Paper
+          - ~CORRECT~ Cardboard
+          - Diapers
+          - Plastics
+          - ~CORRECT~ Vegitables peels
 
     -
-        {{ indented_include("questions/matrix-properties.yml", 8) }}
-
-    -
-        {{ indented_include("questions/multi-question-example.yml", 8) }}
+        {{ indented_include("questions/OPincinerator.yml", 8) }}
 
     -
         type: SurveyTextQuestion
@@ -117,40 +114,15 @@ groups:
         widget: textarea
         prompt: |
 
-            # Psychology Survey
+            # Feedback
 
-            What's your biggest fear?
+            How did you like our tranning?
 
     -
-        {{ indented_include("questions/survey-age-question.yml", 8) }}
+        {{ indented_include("questions/lightleader.yml", 8) }}
 
 -
-    id: quiz_tail
-    shuffle: True
-    pages:
-
-    -
-        {{ indented_include("questions/complex-text-match-example.yml", 8) }}
-    -
-        {{ indented_include("questions/symbolic-expression-example.yml", 8) }}
-    -
-        {{ indented_include("questions/long-choice-least-squares.yml", 8) }}
-    -
-        {{ indented_include("questions/autograded-python-example.yml", 8) }}
-    -
-        {{ indented_include("questions/auto-and-human-graded-python-example.yml", 8) }}
-    -
-        {{ indented_include("questions/pdf-file-upload-example.yml", 8) }}
-    -
-        {{ indented_include("questions/any-file-upload-example.yml", 8) }}
-    -
-        {{ indented_include("questions/human-graded-text-example.yml", 8) }}
-    -
-        {{ indented_include("questions/audio-output-example.yml", 8) }}
-    -
-        {{ indented_include("questions/python-complex-validation-test-code.yml", 8) }}
-    -
-        {{ indented_include("questions/non-ascii-choices.yml", 8) }}
+        
 
 completion_text: |
 

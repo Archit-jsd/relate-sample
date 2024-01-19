@@ -1,0 +1,15 @@
+type: ChoiceQuestion
+id: partsofincinerator
+value: 2
+prompt: |
+
+    # Parts of an incinerator
+
+    which part of Incinerator preevents accidents?
+
+choices:
+
+  - ~CORRECT~ Auto power off
+  - Exhaust pipe
+  - Control panel
+  - Frame

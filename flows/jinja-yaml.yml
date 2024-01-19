@@ -13,10 +13,10 @@ pages:
 -
     type: Page
     id: welcome
-    title: "Linear algebra quiz"
+    title: "Incinerator quiz"
     content: |
 
-        # Welcome to the linear algebra quiz!
+        # Welcome to the test quiz for Incinerator!
 
         Don't be scared.
 
