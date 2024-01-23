@@ -1,6 +1,5 @@
 type: TextQuestion
 id: quarter
-
 prompt: |
 
   # Which Company designed and sold this incinerator?
