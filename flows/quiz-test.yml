@@ -78,7 +78,21 @@ groups:
             #     - type: float
             #     value: 2
         -
-            {{ indented_include("questions/partsofincinerator.yml", 8) }}
+            type: ChoiceQuestion
+            id: partsofincinerator
+            value: 2
+            prompt: |
+
+                # Parts of an incinerator
+
+                which part of Incinerator preevents accidents?
+
+            choices:
+            - ~CORRECT~ Auto power off
+            - Exhaust pipe
+            - Control panel
+            - Frame
+
 
         -
             type: MultipleChoiceQuestion
@@ -101,7 +115,25 @@ groups:
             - ~CORRECT~ Vegitables peels
 
         -
-            {{ indented_include("questions/OPincinerator.yml", 8) }}
+            type: MultipleChoiceQuestion
+            id: OPincinerator
+            value: 1
+            shuffle: False
+            credit_mode: proportional
+            prompt: |
+
+                # Operating an Incinerator
+                which of the following are pre-Operation tasks for an incinerator?
+
+            choices:
+
+            - ~CORRECT~ Pre-heat the incinerator.
+            - Clean the wiremesh.
+            - Load the content for incineration
+            - ~CORRECT~ Check the ease of pulling out the wire mesh.
+            - Ensure that the exhaust pipe has no obstruction.
+
+
 
         -
             type: SurveyTextQuestion

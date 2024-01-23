@@ -6,7 +6,6 @@ credit_mode: proportional
 prompt: |
 
     # Operating an Incinerator
-
     which of the following are pre-Operation tasks for an incinerator?
 
 choices:
