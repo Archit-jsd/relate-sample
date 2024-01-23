@@ -116,7 +116,7 @@ groups:
             - ~CORRECT~ Check the ease of pulling out the wire mesh.
             - Ensure that the exhaust pipe has no obstruction.
 
-    -
+-
     id: quiz_tail
     shuffle: True
     pages:
