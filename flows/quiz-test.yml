@@ -87,7 +87,7 @@ groups:
 
     -
         type: MultipleChoiceQuestion
-        id: incinerator loads
+        id: incineratorloads
         credit_mode: exact
         value: 1
         shuffle: True
