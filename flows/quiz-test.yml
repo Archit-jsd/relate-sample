@@ -75,10 +75,10 @@ groups:
                 which part of Incinerator preevents accidents?
 
             choices:
-            - ~CORRECT~ Auto power off
-            - Exhaust pipe
-            - Control panel
-            - Frame
+                - ~CORRECT~ Auto power off
+                - Exhaust pipe
+                - Control panel
+                - Frame
 
 
         -
@@ -94,12 +94,11 @@ groups:
                 Which of the following are loads for an incinerator?
 
             choices:
-
-            - ~CORRECT~ Paper
-            - ~CORRECT~ Cardboard
-            - Diapers
-            - Plastics
-            - ~CORRECT~ Vegitables peels
+                - ~CORRECT~ Paper
+                - ~CORRECT~ Cardboard
+                - Diapers
+                - Plastics
+                - ~CORRECT~ Vegitables peels
 
         -
             type: MultipleChoiceQuestion
@@ -113,12 +112,11 @@ groups:
                 which of the following are pre-Operation tasks for an incinerator?
 
             choices:
-
-            - ~CORRECT~ Pre-heat the incinerator.
-            - Clean the wiremesh.
-            - Load the content for incineration
-            - ~CORRECT~ Check the ease of pulling out the wire mesh.
-            - Ensure that the exhaust pipe has no obstruction.
+                - ~CORRECT~ Pre-heat the incinerator.
+                - Clean the wiremesh.
+                - Load the content for incineration
+                - ~CORRECT~ Check the ease of pulling out the wire mesh.
+                - Ensure that the exhaust pipe has no obstruction.
 
 
 
