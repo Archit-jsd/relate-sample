@@ -78,9 +78,7 @@ groups:
 
           - type: float
             value: 2
-            rtol: 1e-4
-          - <plain>half
-          - <plain>a half
+          - <plain>two
 
     -
         {{ indented_include("questions/partsofincinerator.yml", 8) }}
