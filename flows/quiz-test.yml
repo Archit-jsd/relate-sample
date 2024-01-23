@@ -53,16 +53,18 @@ groups:
         type: TextQuestion
         id: power
         value: 5
-        widget: textarea
         prompt: |
 
             # A Power
 
             How much Power(in kwatts) does an incinerate need to start?
 
-            # answers:
-            #     - type: float
-            #     value: 2
+            answers:
+                - type: float
+                    value: 0.5
+                    rtol: 1e-4
+                - <plain>two
+                - <plain>Two
     -
         type: ChoiceQuestion
         id: partsofincinerator
