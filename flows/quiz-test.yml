@@ -61,7 +61,7 @@ groups:
 
             answers:
                 - type: float
-                    value: 0.5
+                    value: 2.0
                     rtol: 1e-4
                 - <plain>two
                 - <plain>Two
