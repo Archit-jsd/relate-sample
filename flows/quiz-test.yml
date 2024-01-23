@@ -72,11 +72,11 @@ groups:
 
             # A Power
 
-            How much Power(in kwatts) does an incinerate need to start?
+            # How much Power(in kwatts) does an incinerate need to start?
 
-            answers:
-                - type: float
-                value: 2
+            # answers:
+            #     - type: float
+            #     value: 2
         -
             {{ indented_include("questions/partsofincinerator.yml", 8) }}
 
