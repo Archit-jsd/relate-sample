@@ -6,7 +6,4 @@ prompt: |
   # Which Company designed and sold this incinerator?
 
 answers:
--   type: float
-    value: 0.5
-    rtol: 0.01
--   <plain>Light Leader
+    - <plain>Light Leader
