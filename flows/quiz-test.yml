@@ -1,6 +1,6 @@
 {% from "yaml-macros.yml" import indented_include %}
 
-title: "Incinerator Quiz"
+title: Incinerator Quiz
 description: |
 
     # Incinerator Quiz
