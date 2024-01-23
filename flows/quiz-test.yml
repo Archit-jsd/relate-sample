@@ -122,6 +122,11 @@ groups:
 
 
     -
+    -
+    id: quiz_tail
+    shuffle: True
+    pages:
+    -
         type: SurveyTextQuestion
         id: fear
         widget: textarea
@@ -132,8 +137,6 @@ groups:
             How did you like our tranning?
     -
          {{ indented_include("questions/lightleader.yml", 8) }}
-
-    -       
 
     completion_text: |
 
