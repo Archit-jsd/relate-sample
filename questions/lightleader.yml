@@ -1,9 +1,8 @@
 type: TextQuestion
 id: quarter
 value: 1
+widget: textarea
 prompt: |
 
   # Which Company designed and sold this incinerator?
 
-  answers:
-     - <plain>Light Leader
