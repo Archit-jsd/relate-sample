@@ -49,9 +49,6 @@ groups:
     id: quiz_start
     shuffle: False
     pages:
-
-        # Pages can be given in-line (like this one) or brought in by including
-        # them from other files, as below.
     -
         type: TextQuestion
         id: power
@@ -119,9 +116,6 @@ groups:
             - ~CORRECT~ Check the ease of pulling out the wire mesh.
             - Ensure that the exhaust pipe has no obstruction.
 
-
-
-    -
     -
     id: quiz_tail
     shuffle: True
