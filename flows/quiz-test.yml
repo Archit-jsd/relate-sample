@@ -130,7 +130,14 @@ groups:
 
             How did you like our tranning?
     -
-         {{ indented_include("questions/lightleader.yml", 8) }}
+        type: TextQuestion
+        id: quarter
+        value: 1
+        widget: textarea
+        prompt: |
+
+        # Which Company designed and sold this incinerator?
+
 
     completion_text: |
 
