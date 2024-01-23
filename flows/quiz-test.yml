@@ -1,6 +1,7 @@
 {% from "yaml-macros.yml" import indented_include %}
 
-title: Incinerator Quiz
+title: "Incinerator Quiz"
+
 description: |
 
     # Incinerator Quiz
@@ -45,9 +46,9 @@ groups:
             Don't be scared.
 
 -
-        id: quiz_start
-        shuffle: False
-        pages:
+    id: quiz_start
+    shuffle: False
+    pages:
 
         # Pages can be given in-line (like this one) or brought in by including
         # them from other files, as below.
