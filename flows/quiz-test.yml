@@ -119,6 +119,10 @@ groups:
             How did you like our tranning?
 
     -
+    id: quiz_tail
+    shuffle: True
+    pages:
+    -
         {{ indented_include("questions/lightleader.yml", 8) }}
 
 -
