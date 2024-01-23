@@ -121,17 +121,17 @@ groups:
 
 
 
-        -
-            type: SurveyTextQuestion
-            id: fear
-            widget: textarea
-            prompt: |
+    -
+        type: SurveyTextQuestion
+        id: fear
+        widget: textarea
+        prompt: |
 
-                # Feedback
+            # Feedback
 
-                How did you like our tranning?
-        -
-            {{ indented_include("questions/lightleader.yml", 8) }}
+            How did you like our tranning?
+    -
+         {{ indented_include("questions/lightleader.yml", 8) }}
 
     -       
 
