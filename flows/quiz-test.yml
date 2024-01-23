@@ -52,11 +52,11 @@ groups:
 
         # Pages can be given in-line (like this one) or brought in by including
         # them from other files, as below.
-        -
-            type: TextQuestion
-            id: power
-            value: 5
-            prompt: |
+    -
+        type: TextQuestion
+        id: power
+        value: 5
+        prompt: |
 
             # A Power
 
@@ -65,59 +65,59 @@ groups:
             answers:
                 - type: float
                 value: 2
-        -
-            type: ChoiceQuestion
-            id: partsofincinerator
-            value: 2
-            prompt: |
+    -
+        type: ChoiceQuestion
+        id: partsofincinerator
+        value: 2
+        prompt: |
 
-                # Parts of an incinerator
+            # Parts of an incinerator
 
-                which part of Incinerator preevents accidents?
+            which part of Incinerator preevents accidents?
 
-            choices:
-                - ~CORRECT~ Auto power off
-                - Exhaust pipe
-                - Control panel
-                - Frame
+        choices:
+            - ~CORRECT~ Auto power off
+            - Exhaust pipe
+            - Control panel
+            - Frame
 
 
-        -
-            type: MultipleChoiceQuestion
-            id: incineratorloads
-            credit_mode: exact
-            value: 1
-            shuffle: True
-            prompt: |
+    -
+        type: MultipleChoiceQuestion
+        id: incineratorloads
+        credit_mode: exact
+        value: 1
+        shuffle: True
+        prompt: |
 
-                #Incinerator loads
+            #Incinerator loads
 
-                Which of the following are loads for an incinerator?
+            Which of the following are loads for an incinerator?
 
-            choices:
-                - ~CORRECT~ Paper
-                - ~CORRECT~ Cardboard
-                - Diapers
-                - Plastics
-                - ~CORRECT~ Vegitables peels
+        choices:
+            - ~CORRECT~ Paper
+            - ~CORRECT~ Cardboard
+            - Diapers
+            - Plastics
+            - ~CORRECT~ Vegitables peels
 
-        -
-            type: MultipleChoiceQuestion
-            id: OPincinerator
-            value: 1
-            shuffle: False
-            credit_mode: proportional
-            prompt: |
+    -
+        type: MultipleChoiceQuestion
+        id: OPincinerator
+        value: 1
+        shuffle: False
+        credit_mode: proportional
+        prompt: |
 
-                # Operating an Incinerator
-                which of the following are pre-Operation tasks for an incinerator?
+            # Operating an Incinerator
+            which of the following are pre-Operation tasks for an incinerator?
 
-            choices:
-                - ~CORRECT~ Pre-heat the incinerator.
-                - Clean the wiremesh.
-                - Load the content for incineration
-                - ~CORRECT~ Check the ease of pulling out the wire mesh.
-                - Ensure that the exhaust pipe has no obstruction.
+        choices:
+            - ~CORRECT~ Pre-heat the incinerator.
+            - Clean the wiremesh.
+            - Load the content for incineration
+            - ~CORRECT~ Check the ease of pulling out the wire mesh.
+            - Ensure that the exhaust pipe has no obstruction.
 
 
 
