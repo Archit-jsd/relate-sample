@@ -8,7 +8,6 @@ prompt: |
     which part of Incinerator preevents accidents?
 
 choices:
-
   - ~CORRECT~ Auto power off
   - Exhaust pipe
   - Control panel
