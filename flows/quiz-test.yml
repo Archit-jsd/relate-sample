@@ -58,76 +58,76 @@ groups:
             Don't be scared.
 
 -
-    id: quiz_start
-    shuffle: False
-    pages:
+        id: quiz_start
+        shuffle: False
+        pages:
 
-    # Pages can be given in-line (like this one) or brought in by including
-    # them from other files, as below.
+        # Pages can be given in-line (like this one) or brought in by including
+        # them from other files, as below.
+        -
+            type: TextQuestion
+            id: power
+            value: 5
+            prompt: |
+
+            # A Power
+
+            How much Power(in kwatts) does an incinerate need to start?
+
+            answers:
+
+            - type: float
+                value: 2
+            - <plain>two
+
+        -
+            {{ indented_include("questions/partsofincinerator.yml", 8) }}
+
+        -
+            type: MultipleChoiceQuestion
+            id: incineratorloads
+            credit_mode: exact
+            value: 1
+            shuffle: True
+            prompt: |
+
+                #Incinerator loads
+
+                Which of the following are loads for an incinerator?
+
+            choices:
+
+            - ~CORRECT~ Paper
+            - ~CORRECT~ Cardboard
+            - Diapers
+            - Plastics
+            - ~CORRECT~ Vegitables peels
+
+        -
+            {{ indented_include("questions/OPincinerator.yml", 8) }}
+
+        -
+            type: SurveyTextQuestion
+            id: fear
+            widget: textarea
+            prompt: |
+
+                # Feedback
+
+                How did you like our tranning?
+
     -
-        type: TextQuestion
-        id: power
-        value: 5
-        prompt: |
-
-          # A Power
-
-          How much Power(in kwatts) does an incinerate need to start?
-
-        answers:
-
-          - type: float
-            value: 2
-          - <plain>two
-
-    -
-        {{ indented_include("questions/partsofincinerator.yml", 8) }}
-
-    -
-        type: MultipleChoiceQuestion
-        id: incineratorloads
-        credit_mode: exact
-        value: 1
+        id: quiz_tail
         shuffle: True
-        prompt: |
-
-            #Incinerator loads
-
-            Which of the following are loads for an incinerator?
-
-        choices:
-
-          - ~CORRECT~ Paper
-          - ~CORRECT~ Cardboard
-          - Diapers
-          - Plastics
-          - ~CORRECT~ Vegitables peels
+        pages:
+        -
+            {{ indented_include("questions/lightleader.yml", 8) }}
 
     -
-        {{ indented_include("questions/OPincinerator.yml", 8) }}
+            
 
-    -
-        type: SurveyTextQuestion
-        id: fear
-        widget: textarea
-        prompt: |
+    completion_text: |
 
-            # Feedback
+        # See you in class!
 
-            How did you like our tranning?
-
-    -
-    id: quiz_tail
-    shuffle: True
-    pages:
-    -
-        {{ indented_include("questions/lightleader.yml", 8) }}
-
--
-        
-
-completion_text: |
-
-    # See you in class!
-
-    Thanks for completing the quiz.
+        Thanks for completing the quiz.
