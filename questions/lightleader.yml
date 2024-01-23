@@ -5,7 +5,3 @@ prompt: |
 
   # Which Company designed and sold this incinerator?
 
-answers:
- - type: string
-    value: Light Leader
-
