@@ -54,7 +54,7 @@ pages:
         Exhaust pipe takes the exhaust gases and smoke upto a height prescribed by the WHO so as to avoid pollution.
 -
     type: Page
-    id: pre-operation
+    id: preoperation
     content: |
 
       # Pre-Operation Procedures
