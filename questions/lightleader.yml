@@ -1,7 +1,14 @@
 type: TextQuestion
 id: quarter
-is_optional_page: True
+
 prompt: |
 
   # Which Company designed and sold this incinerator?
 
+answers:
+
+          - type: string
+            value: 'Light Leader'
+            rtol: 1e-4
+          - <plain>Light Leader
+          - <plain>light leader
