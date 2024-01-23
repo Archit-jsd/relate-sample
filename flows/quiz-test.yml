@@ -77,7 +77,6 @@ groups:
             answers:
                 - type: float
                 value: 2
-                - <plain>two
         -
             {{ indented_include("questions/partsofincinerator.yml", 8) }}
 
